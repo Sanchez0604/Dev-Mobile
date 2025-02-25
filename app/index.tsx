@@ -1,4 +1,6 @@
 import { Text, View } from "react-native";
+import { Link } from "expo-router";
+import { MaterialIcons } from '@expo/vector-icons';
 
 export default function Index() {
   return (
@@ -8,8 +10,12 @@ export default function Index() {
         justifyContent: "center",
         alignItems: "center",
       }}
+      
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <Text>Tela inicial.</Text>
+      <Link href="/configuracoes">
+        <MaterialIcons name="settings" size={24} color="black" />
+      </Link>
     </View>
   );
 }
